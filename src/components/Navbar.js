@@ -6,21 +6,27 @@ export default function Navbar(props) {
     const [styleToggle, setStyle] = useState({
             col: 'text-black',
             bgCol: 'bg-slate-300',
-            light: 'Light'
+            light: 'Light',
+            bgBtnCol: 'bg-white',
+            txtCol: 'text-black'
             
     });
     const onDark=()=>{
         if(styleToggle.col==='text-black'){
             setStyle({
                 col: 'text-white',
-                bgCol:'bg-black'
+                bgCol:'bg-black',
+                bgBtnCol: 'bg-black',
+                txtCol: 'text-white'
             })
            
             
         } else{
             setStyle({
                 col: 'text-black',
-                bgCol:'bg-slate-300'
+                bgCol:'bg-slate-300',
+                bgBtnCol: 'bg-white',
+                txtCol: 'text-black'
             })
             
         }
@@ -39,7 +45,7 @@ export default function Navbar(props) {
                 <a href="/" className={`px-6 py-4 cursor-pointer ${styleToggle.col} hover:underline`}>Contact Us</a>
                 <a href="/" className={`px-6 py-4 cursor-pointer ${styleToggle.col} hover:underline`}>Services</a>
                 <img src={require('../images/kM.jpg')} alt="logo" className=' border rounded-full w-14 absolute right-10 top-2 cursor-pointer hover:border-gray-500 hover:border-4' />
-               <button className='border-2 border-slate-600 rounded-md absolute right-32 top-3 px-1 hover:bg-[#333333] hover:text-white hover:border-red-200 flex items-center py-auto'  onClick={onDark} >{props.mode}</button>
+               <button className={`border-2 ${styleToggle.bgBtnCol} ${styleToggle.txtCol} rounded-md absolute right-32 top-3 px-1 border-red-200 flex items-center py-auto`}  onClick={onDark} >{props.mode}</button>
             </div>
             
 
