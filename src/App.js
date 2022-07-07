@@ -1,20 +1,45 @@
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+// import { useState } from "react";
+
 import Navbar from './components/Navbar'
 import Leftpanel from './components/Leftpanel'
-import Textfield from './components/Textfield'
-import './App.css';
-import React, { useState } from 'react'
-
-// ! Always pass the value of color,bg-color into the form of tailwindcss Framework otherwise, its won't work!
+import Textfield from './components/Home'
+import About from './components/About'
+import Services from './components/Services'
+import Contact from './components/Contact'
 
 function App() {
- 
   return (
     <>
-   <Navbar/>
-   <Leftpanel/>
-   <Textfield/>
+
+      <Routes>
+
+        <Route path='/' element={<Navbar />} />
+      </Routes>
+      <Routes>
+        <Route path='/' element={<Leftpanel />} />
+      </Routes>
+    <Routes>
+      <Route path="/" element={<Textfield/>}></Route>
+    </Routes>
+    <Routes>
+      <Route path="/About" element={<About/>}></Route>
+    </Routes>
+    <Routes>
+    <Route path="/Services" element={<Services/>}></Route>
+    </Routes>
+    <Routes>
+    <Route path="/Contact" element={<Contact/>}></Route>
+    </Routes>
     </>
+
   );
+
+
+
 }
+ 
 
 export default App;
