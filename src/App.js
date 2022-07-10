@@ -5,11 +5,11 @@ import "./App.css";
 
 import Navbar from './components/Navbar'
 import Leftpanel from './components/Leftpanel'
-import Textfield from './components/Home'
+import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
-import NavbarScreen from "./components/NavbarScreen";
+
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path='/' element={<Leftpanel />} />
       </Routes>
     <Routes>
-      <Route path="/" element={<Textfield/>}></Route>
+      <Route path="/" element={<Home/>}></Route>
     </Routes>
     <Routes>
       <Route path="/About" element={<About heading='About Us'/>}></Route>
@@ -34,11 +34,6 @@ function App() {
     <Routes>
     <Route path="/Contact" element={<Contact/>}></Route>
     </Routes>
-
-    <Routes>
-    <Route path="/" element={<NavbarScreen/>}></Route>
-    </Routes>
-
     </>
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Textfield() {
+export default function Home() {
   return (
     <>
     <h1 className='font-sans text-white text-4xl font-extrabold my-4 mx-10 p-5 text-center w-3/4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border rounded-3xl'>The Home Section</h1>

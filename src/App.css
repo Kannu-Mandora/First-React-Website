@@ -1,8 +1,11 @@
+/* .dropMenu{
+    display: none;
+} */
 /* This Media Query For LeftPanel Hide In Mobile Phones */
 @media screen and (max-width:600px) {
     .navbar-info{
             display: none;
-    }
+        }
     
     
 }
@@ -11,4 +14,22 @@
         display: none;
     }
 }
+@media screen and (min-width:601px){
+   :is(.hamburger, #dropMenuBar){
+    display: none !important;
+   }
+  @media screen  and (max-width: 600px){
+        #dropMenuBar{
+    display: none;
+        }
+   }
+}
+
+@media screen and (max-width:600px){
+    .hamburger{
+        display: block;
+    }
+    
+}
+
 
