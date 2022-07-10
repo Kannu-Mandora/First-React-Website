@@ -10,10 +10,6 @@ export default function Navbar() {
         txtCol: 'text-black'
 
     }
-
-
-
-
     function dropMenu() {
         let x = document.getElementById('dropMenuBar')
         if (x.style.display === 'none') {
@@ -24,11 +20,7 @@ export default function Navbar() {
             console.log("else worked");
         }
 
-
-
     }
-
-
 
     return (
 
@@ -45,6 +37,12 @@ export default function Navbar() {
                     <span className="block w-8 h-1 bg-gray-600"></span>
                 </div>
 
+                <a href="https://twitter.com/KannuMandora">
+                <img src={require('../images/twitter.gif')} alt="Twitter" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-[102px] top-4 cursor-pointer hover:border-x-cyan-500 hover:border-2'/>
+                </a>
+                <a href="https://www.instagram.com/psy.codes/">
+                <img src={require('../images/insta.gif')} alt="Insta" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-40 top-4 cursor-pointer hover:border-x-cyan-500 hover:border-2'/>
+                </a>
                 <a href="/">
                     <img src={require('../images/kM.jpg')} alt="logo" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-10 top-4 cursor-pointer hover:border-x-cyan-500 hover:border-2' />
                 </a>
@@ -71,6 +69,12 @@ export default function Navbar() {
                     <a href="/Contact" className={`px-6 py-4 cursor-pointer ${styleToggle.col} hover:underline`}>Contact Us</a>
                     <a href="/Services" className={`px-6 py-4 cursor-pointer ${styleToggle.col} hover:underline`}>Services</a>
                 </div>
+                <a href="https://twitter.com/KannuMandora">
+                <img src={require('../images/twitter.gif')} alt="Twitter" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-[102px] top-2 cursor-pointer hover:border-x-cyan-500 hover:border-2'/>
+                </a>
+                <a href="https://www.instagram.com/psy.codes/">
+                <img src={require('../images/insta.gif')} alt="Insta" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-40 top-2 cursor-pointer hover:border-x-cyan-500 hover:border-2'/>
+                </a>
                 <a href="/">
                     <img src={require('../images/kM.jpg')} alt="logo" className=' border-2 border-x-red-400  rounded-full w-11 h-11 absolute right-10 top-2 cursor-pointer hover:border-x-cyan-500 hover:border-2' />
                 </a>
