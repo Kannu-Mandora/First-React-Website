@@ -9,6 +9,7 @@ import Textfield from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
+import NavbarScreen from "./components/NavbarScreen";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Route path="/" element={<Textfield/>}></Route>
     </Routes>
     <Routes>
-      <Route path="/About" element={<About/>}></Route>
+      <Route path="/About" element={<About heading='About Us'/>}></Route>
     </Routes>
     <Routes>
     <Route path="/Services" element={<Services/>}></Route>
@@ -33,7 +34,13 @@ function App() {
     <Routes>
     <Route path="/Contact" element={<Contact/>}></Route>
     </Routes>
+
+    <Routes>
+    <Route path="/" element={<NavbarScreen/>}></Route>
+    </Routes>
+
     </>
+
 
   );
 
