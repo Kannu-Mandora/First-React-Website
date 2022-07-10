@@ -14,7 +14,7 @@ export default function Leftpanel() {
           <div className='flex flex-col m-1 h-auto'>
             <span className='mx-auto text-2xl font-mono font-bold'>Kannu Mandora</span>
             <p className='mx-auto font-mono text-sm p-3 font-semibold'>Thanks for visting our site.</p>
-            <p className='mx-auto font-mono text-sm p-3 font-semibold'>Stay Safe Stay Smart.</p>
+            <p className='mx-auto font-mono text-sm p-3 font-semibold'>DRY: Don't Repeat Yourself</p>
 
           </div>
 

@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 
-export default function Contact(props) {
+export default function Contact() {
     
 
     return (
@@ -10,7 +10,7 @@ export default function Contact(props) {
   <div class="container px-5 py-5 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Get closer with us. Kindly fill our forum.</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Forum isn't working yet.</p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
@@ -37,8 +37,8 @@ export default function Contact(props) {
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a class="text-indigo-500" href='/'>mandorakannu@gmail.com</a>
-          <p class="leading-normal my-5">49 Smith St.
-            <br/>Saint Cloud, MN 56301
+          <p class="leading-normal my-5">| Padampur | 
+            <br/>Sriganganagar, Rajasthan
           </p>
           <span class="inline-flex">
             {/* <a class="text-gray-500" href='/'>
